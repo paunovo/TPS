@@ -1,18 +1,442 @@
-/* Error: expected ")".
- *    ,
- * 35 |     background: transparent url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e) center/1em auto no-repeat;
- *    |                                     ^
- *    '
- *   scss\_navBar.scss 35:37  @import
- *   scss\style.scss 3:9      root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected \")\".\a    \2577 \a 35 \2502      background: transparent url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e) center/1em auto no-repeat;\d\a    \2502                                      ^\a    \2575 \a   scss\\_navBar.scss 35:37  @import\a   scss\\style.scss 3:9      root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  margin-top: 3rem;
 }
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0.7 rem;
+}
+
+h3 {
+  color: #676767;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  overflow: auto;
+}
+
+nav {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+nav ul li a:hover {
+  font-weight: bold;
+}
+
+.bg-light {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgb(255, 255, 255);
+  padding-right: 0;
+  padding-left: 0;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+::selection {
+  background: rgb(238, 193, 252);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+  display: inline-block;
+}
+
+.flex1 {
+  display: flex;
+  display: inline-flex;
+}
+
+.text-right {
+  text-align: right;
+  margin-right: 25px;
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+  padding: 10px 64px;
+}
+
+.row {
+  margin-right: 25px;
+  margin-left: 25px;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
+}
+
+div figure img {
+  width: 100%;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor figure {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.contenedor figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.contenedor figure .capa {
+  position: absolute;
+  left: 1.5%;
+  right: 1.5%;
+  top: 3%;
+  bottom: 3%;
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.contenedor figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedor figure:hover > .capa p {
+  margin-top: 20%;
+}
+
+.contenedor figure:hover > img {
+  transform: scale(1.3);
+}
+
+.contenedor figure .capa p {
+  color: rgb(0, 0, 0);
+  margin-bottom: auto;
+  transition: all 400ms ease-out;
+  font-weight: 700;
+}
+
+.contenedor figure .capa h3 {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+.contenedorsm {
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorsm figure {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.contenedorsm figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.contenedorsm figure .capa {
+  position: absolute;
+  left: 3%;
+  right: 3%;
+  top: 3%;
+  bottom: 3%;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.contenedorsm figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedorsm figure:hover > .capa p {
+  margin-top: 40%;
+}
+
+.contenedorsm figure:hover > img {
+  transform: scale(1.3);
+}
+
+.contenedorsm figure .capa p {
+  color: rgb(0, 0, 0);
+  margin-bottom: auto;
+  transition: all 400ms ease-out;
+  font-weight: 700;
+}
+
+.contenedorsm figure .capa h3 {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  margin-right: 40px;
+}
+
+button:hover {
+  opacity: 70%;
+}
+
+input {
+  text-decoration: none;
+}
+
+.form-label {
+  font-size: 1.5rem;
+  padding-bottom: 0px;
+}
+
+.horarios {
+  padding-top: 40px;
+}
+
+.violeta {
+  color: blueviolet;
+}
+
+.celeste {
+  color: rgb(43, 159, 226);
+}
+
+.verde {
+  color: rgb(43, 226, 156);
+}
+
+.amarillo {
+  color: rgb(226, 208, 43);
+}
+
+.rosa {
+  color: rgb(247, 56, 237);
+}
+
+.hola {
+  padding-left: 3px;
+  font-family: "Roboto", sans-serif;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  overflow: auto;
+  display: inline-block;
+  font-weight: bold;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+}
+
+.strong {
+  font-weight: bold !important;
+}
+
+.animate {
+  animation-timing-function: ease-in-out;
+  animation-duration: 6s;
+}
+
+footer div a img:hover {
+  opacity: 70%;
+}
+
+.vinculos-redes {
+  width: 95%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 25px auto;
+  border-top: solid rgb(0, 0, 0) 1px;
+  border-bottom: solid rgb(0, 0, 0) 1px;
+  display: inline-block;
+  letter-spacing: 21px;
+}
+
+@media only screen and (max-width: 890px) {
+  nav a img {
+    width: 85%;
+    margin-top: 0px;
+    margin-right: 0;
+  }
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+  .text-center {
+    text-align: justify;
+  }
+  .text-left {
+    text-align: center;
+    padding: 10px 25px;
+  }
+  div iframe {
+    align-content: stretch;
+    margin-right: 5px;
+  }
+  .fotosanimate {
+    min-height: 320px;
+  }
+  main div img {
+    min-height: 220px;
+  }
+  .izquierda-texto {
+    text-align: center;
+    margin-left: 5px;
+  }
+  .text-right {
+    text-align: center;
+    margin-right: auto;
+    float: none;
+  }
+  .navbar-brand {
+    width: 230px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .row {
+    margin-right: 5px;
+    margin-left: 5px;
+    --bs-gutter-x: 0.7rem;
+    --bs-gutter-y: 0.7rem;
+  }
+  .button {
+    justify-content: center;
+    margin-right: 0px;
+  }
+  .img-error {
+    min-width: fit-content;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+  }
+}
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 0.99;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+
+main div img {
+  width: 100%;
+}
+
+.imagenes-ancho {
+  width: 98%;
+}
+
+.izquierda-texto {
+  width: 85%;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+article p {
+  margin-top: 10px;
+  display: block;
+}
+
+.medida-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-error {
+  margin-bottom: 24px;
+  margin-right: 0px;
+  margin-top: 24px;
+}
+
+.img-error {
+  object-fit: contain;
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
