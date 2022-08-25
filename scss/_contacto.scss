@@ -1,0 +1,73 @@
+iframe {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    margin-right: 40px;
+}
+
+button:hover {
+    opacity: 70%;
+}
+
+input {
+    text-decoration: none;
+}
+
+.form-label {
+    font-size: $text-md;
+    padding-bottom: 0px;
+}
+
+.horarios {
+    padding-top: 40px;
+}
+
+
+// Comienzo animacion hola 
+
+.violeta {
+    color: blueviolet;
+}
+
+.celeste {
+    color: rgb(43, 159, 226);
+}
+
+.verde {
+    color: rgb(43, 226, 156);
+}
+
+.amarillo {
+    color: rgb(226, 208, 43);
+}
+
+.rosa {
+    color: rgb(247, 56, 237);
+}
+
+.hola {
+    padding-left: 3px;
+    font-family: $main-font;
+    line-height: 2rem;
+    font-size: $text-md;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    overflow: auto;
+    display: inline-block;
+    font-weight: bold;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+
+.strong {
+    font-weight: bold !important;
+}
+
+.animate {
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+}
+
+// Final animacion hola 

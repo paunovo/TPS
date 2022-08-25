@@ -1,0 +1,34 @@
+// mixin
+
+@mixin padding($padding-left, $padding-right) {
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+}
+
+// colores
+
+$bg-color: rgb(255, 255, 255);
+
+$main-color: rgb(0, 0, 0);
+
+$secondary-color: #676767;
+
+//maps
+$paleta:('uno': $bg-color,
+    'dos': $main-color,
+    'tres': $secondary-color, );
+
+
+// anchos
+
+$w-100: 100%;
+
+$w-98: 98%;
+
+$w-85: 85%;
+
+$w-50: 50%;
+
+// altos
+
+$h-100: 100%;

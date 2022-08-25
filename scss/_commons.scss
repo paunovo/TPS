@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+::selection {
+    background: rgb(238, 193, 252);
+  }
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: $w-100;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+    display: inline-block;
+}
+
+.flex1 {
+    display: flex;
+    display: inline-flex;
+}
+
+.text-right {
+    text-align: right;
+    margin-right: 25px;
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+    padding: 10px 64px;
+}
+
+.row {
+    margin-right: 25px;
+    margin-left: 25px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+}

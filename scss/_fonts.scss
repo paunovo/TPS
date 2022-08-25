@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+$main-font: "Roboto",
+sans-serif;
+
+
+$text-lg: 3rem;
+
+$text-md: 1.5rem;
+
+$text-sm: 1rem;
+
+$text-bold: bold;
+
+
+h1 {
+    color: $main-color;
+    font-family: $main-font;
+    font-size: $text-lg;
+    margin-top: $text-lg;
+}
+
+h2 {
+    color: $main-color;
+    font-family: $main-font;
+    font-size: $text-md;
+    margin-top: 0.7 rem;
+}
+
+h3 {
+    color: $secondary-color;
+    font-family: $main-font;
+    font-size: $text-sm;
+}
+
+p {
+    font-family: $main-font;
+    line-height: 2rem;
+    font-size: $text-md;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    overflow: auto;
+}

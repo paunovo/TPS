@@ -1,0 +1,82 @@
+// Comienzo breakpoints
+
+@media only screen and (max-width: 890px) {
+    nav a img {
+        width: $w-85;
+        margin-top: 0px;
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .text-center {
+        text-align: justify;
+    }
+
+    .text-left {
+        text-align: center;
+        padding: 10px 25px;
+    }
+
+    div iframe {
+        align-content: stretch;
+        margin-right: 5px;
+    }
+
+    .fotosanimate {
+        min-height: 320px;
+    }
+
+    main div img {
+        min-height: 220px;
+    }
+
+    .izquierda-texto {
+        text-align: center;
+        margin-left: 5px;
+    }
+
+    .text-right {
+        text-align: center;
+        margin-right: auto;
+        float: none;
+    }
+
+    .navbar-brand {
+        width: 230px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .row {
+        margin-right: 5px;
+        margin-left: 5px;
+        --bs-gutter-x: 0.7rem;
+        --bs-gutter-y: 0.7rem;
+    }
+
+    .button {
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .img-error {
+        min-width: fit-content;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1rem;
+    }
+}
+
+// Final breakpoints

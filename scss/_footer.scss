@@ -1,0 +1,14 @@
+footer div a img:hover {
+    opacity: 70%;
+}
+
+.vinculos-redes {
+    width: 95%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 25px auto;
+    border-top: solid $main-color 1px;
+    border-bottom: solid $main-color 1px;
+    display: inline-block;
+    letter-spacing: 21px;
+}
