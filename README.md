@@ -4,7 +4,7 @@
 Página web de un estudio de arquitectura y urbanismo para el curso de Desarrollo web - Coderhouse
 
 ## Links
-###### Link Oficial [Netify](https://6307fea4ec89f50c746baf17--marvelous-cassata-fc8f6f.netlify.app/)
+###### Link Oficial [Netify](https://the-planners-studio.netlify.app/)
 ###### Pagina de Github [Github Pages](https://paunovo.github.io/TPS/)
 
 ## Descripción de las páginas
